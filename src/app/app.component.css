@@ -1,0 +1,22 @@
+
+.showcase {
+  background: #e0e0e0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 45px;
+}
+
+h3:first-child {
+  margin-top: 25px;
+}
+
+pre {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 880px;
+  height: 20px;
+  text-align: center;
+}

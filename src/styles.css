@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+.frame li {
+  background: #2E435A !important;
+  color: #fff !important;
+  border: solid 1px !important;
+}
+
+.kkk1 {
+  width: 110px !important;
+}
+.kkk2 {
+  width: 180px !important;
+}
+.kkk3 {
+  width: 100px !important;
+}
+.kkk4 {
+  width: 220px !important;
+}
+.kkk5 {
+  width: 200px !important;
+}
+.kkk6 {
+  width: 80px !important;
+}
+.kkk7 {
+  width: 150px !important;
+}
+
+.lll {
+  height: 200px !important;
+}
+
+.mmm {
+  width: 100px !important;
+}
