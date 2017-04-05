@@ -41,5 +41,5 @@ testem.log
 Thumbs.db
 
 # Ignored files
-*.js
+
 *.map
