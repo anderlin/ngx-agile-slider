@@ -6,7 +6,6 @@
 
 # dependencies
 /node_modules
-npm-debug.log
 
 # IDEs and editors
 /.idea
@@ -39,7 +38,3 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
-
-# Ignored files
-*.js
-*.map

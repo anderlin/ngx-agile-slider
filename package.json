@@ -12,8 +12,7 @@
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.json",
     "webdriver-start": "node_modules/protractor/bin/webdriver-manager start",
     "webdriver-update": "node_modules/protractor/bin/webdriver-manager update",
-    "serve.coverage": "remap-istanbul -b src/ -i coverage/coverage-final.json -o coverage -t html",
-    "prepublish": "tsc --p src/tsconfig.json"
+    "serve.coverage": "istanbul -b src/ -i coverage/coverage-final.json -o coverage -t html"
   },
   "author": "Aleksej Kolb",
   "contributors": [
@@ -43,8 +42,8 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/hammerjs": "^2.0.33",
     "@types/jasmine": "2.5.38",
-    "@types/node": "^6.0.42",
     "@types/lodash": "4.14.37",
+    "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.28.3",
     "codelyzer": "~2.0.0-beta.1",
     "compodoc": "0.0.41",
@@ -52,10 +51,12 @@
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
     "karma-chrome-launcher": "^2.0.0",
-    "karma-phantomjs-launcher": "^1.0.2",
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
+    "karma-mocha-reporter": "^2.2.3",
+    "karma-phantomjs-launcher": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
+    "mocha": "^3.2.0",
     "protractor": "~4.0.13",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
