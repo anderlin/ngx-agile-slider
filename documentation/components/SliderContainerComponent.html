@@ -1,0 +1,2405 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-agile-slider documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-agile-slider documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../">ngx-agile-slider documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/NgxAgileSliderModule.html" >NgxAgileSliderModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SliderContainerComponent.html"  class="active" >SliderContainerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SliderItemComponent.html" >SliderItemComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/LazyLoaderService.html" >LazyLoaderService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-interfaces-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/BrowserSpecificPrefixesInterface.html" >BrowserSpecificPrefixesInterface</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/NavigationItemInterface.html" >NavigationItemInterface</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/PositionInterface.html" >PositionInterface</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/SliderOptionInterface.html" >SliderOptionInterface</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../">ngx-agile-slider documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/NgxAgileSliderModule.html" >NgxAgileSliderModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SliderContainerComponent.html"  class="active" >SliderContainerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SliderItemComponent.html" >SliderItemComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/LazyLoaderService.html" >LazyLoaderService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#interfaces-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/BrowserSpecificPrefixesInterface.html" >BrowserSpecificPrefixesInterface</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/NavigationItemInterface.html" >NavigationItemInterface</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/PositionInterface.html" >PositionInterface</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SliderOptionInterface.html" >SliderOptionInterface</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SliderContainerComponent</li>
+</ol>
+
+
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+        </li>
+        <li>
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab">Source</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade active in" id="infos"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/carousel/components/ngx-agile-slider-container.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>This component represents a carousel container which contains the main functionality.</p>
+
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.None</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>ngx-agile-slider-container</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>ngx-agile-slider-container.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>ngx-agile-slider-container.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>containerId</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>additional container id.</p>
+</div>
+                            <p>
+                              <em>Default value: </em><code>container</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>sliderOptions</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>additional slider options.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>SliderOptionInterface</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="outputs">Outputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>afterInit</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>afterSlide</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>beforeInit</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>beforeSlide</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>next</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>prev</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(_lazyLoaderService: <a href="../injectables/LazyLoaderService.html" >LazyLoaderService</a>, _renderer: <a href="https://angular.io/docs/ts/latest/api/core/index/Renderer-class.html" target="_blank" >Renderer</a>, detectChangeRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank" >ChangeDetectorRef</a>)</code>
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="methods">Methods</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> onClickNext</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>onClickNext()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Called after click on the NEXT navigation arrow.<br>Emits an next click event and calls the slide function.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> onClickPrev</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>onClickPrev()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Called after click on the PREV navigation arrow.<br>Emits an prev click event and calls the slide function.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> onSwipe</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>onSwipe(action: string)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Called after a swipe over the slider container.<br>Triggers the slide function.</p>
+    </div>
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>action</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>swipeleft or swiperight</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> onClickNavigationItem</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>onClickNavigationItem(index: number)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Called after a click on the navigation dot.<br>Triggers the slide function.</p>
+    </div>
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>index</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>index of the clicked dot</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> setNavigationItemToActive</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>setNavigationItemToActive(index: number)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Highlights the current visible element in the navigation.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> initSlider</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>initSlider()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Initializes the carousel and fires the events.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> slideItemToCurrentIndex</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>slideItemToCurrentIndex()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Calls the slide function and sets the current element to active.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> slideItem</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>slideItem(direction: string)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Slides the elements.</p>
+    </div>
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>direction</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Slide duration</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> buildContainer</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>buildContainer()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Determines the container and frame sizes</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> prepareForInfinityLoop</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>prepareForInfinityLoop()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Prepares the loop</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> prepareAutoSwitchOff</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>prepareAutoSwitchOff()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Prepares the auto switch off</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> prepareForAutoPlay</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>prepareForAutoPlay()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Prepares the auto play</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> prepareForNavigation</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>prepareForNavigation()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Prepares the navigation</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> translate</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>translate(duration: number, offset: number)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Transforms the elements</p>
+    </div>
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>offset</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Value to transform</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>duration</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Duration of the transformation</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> prepareForLazyLoading</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>prepareForLazyLoading(node: any, nodeIndex: number)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Prepares for image lazy loading.<br>Search for all images in the elements.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> loadImage</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>loadImage()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Loads the images of current element.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> setLoadedImage</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>setLoadedImage(src: string, index: number, node: any, nodeIndex: number)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Sets the loaded image to the img tag.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> setItemToActive</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>setItemToActive()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Makes the item under the current index from the list active.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> setElementToLoading</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>setElementToLoading()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Marks the element with the loading class</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> setElementToLoaded</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>setElementToLoaded()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Marks the element with the loaded class</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> setElementToError</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>setElementToError()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Marks the element with the error class</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> togglePrevButtonClass</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>togglePrevButtonClass(deactivate: boolean)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Marks the PREV button with a class if deactivated.</p>
+    </div>
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>deactivate</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>true for deactivated false if not</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> toggleNextButtonClass</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>toggleNextButtonClass(deactivate: boolean)</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Marks the NEXT button with a class if deactivated.</p>
+    </div>
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>deactivate</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>true for deactivated false if not</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> resize</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>resize()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Sets the frame height to element height.</p>
+    </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> getBrowserSpecificPrefixes</b>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle">
+                                    <span class="fa fa-circle"></span>
+                                </span>
+                            <code>getBrowserSpecificPrefixes()</code>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Return browser specific prefixes.</p>
+    </div>
+                                <div class="io-description">
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>BrowserSpecificPrefixesInterface</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="inputs">Properties</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _afterSlideSubscription</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_afterSlideSubscription:     <code>Subscription</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _browserPrefixes</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_browserPrefixes:     <code>BrowserSpecificPrefixesInterface</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _concatenatedSliderOptions</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_concatenatedSliderOptions:     <code>SliderOptionInterface</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _itemsWidth</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_itemsWidth:     <code>number</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _lockIndex</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_lockIndex:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value: </i><code>false</code>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _resizeSubscription</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_resizeSubscription:     <code>Subscription</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _sliderElements</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_sliderElements:     <code>any[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _sliderFrameWidth</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_sliderFrameWidth:     <code>number</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> _sliderImageSources</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>_sliderImageSources:     <code>string[][]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> container</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>container:     <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+    </bcode>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>div container ref</p>
+    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> currentIndex</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>currentIndex:     <code>number</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value: </i><code>0</code>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> deactivateNext</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>deactivateNext:     <code>string</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> deactivatePrev</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>deactivatePrev:     <code>string</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> frame</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>frame:     <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+    </bcode>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>div frame ref</p>
+    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> navigation</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>navigation:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value: </i><code>false</code>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> navigationItems</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>navigationItems:     <code>NavigationItemInterface[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> sliderActive</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>sliderActive:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value: </i><code>true</code>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> sliderList</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>sliderList:     <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+    </bcode>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>div unsorted list ref</p>
+    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> touchCursor</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>touchCursor:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value: </i><code>false</code>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+    </section>
+</div>
+        <div class="tab-pane fade tab-source-code" id="source">
+            <pre><code class="hljs javascript">import {
+  AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnDestroy, Output, Renderer, ViewChild,
+  ViewEncapsulation
+} from &#x27;@angular/core&#x27;;
+
+import * as _ from &#x27;lodash&#x27;;
+
+import { SliderOptionInterface } from &#x27;../interfaces/options.interface&#x27;;
+import { BrowserSpecificPrefixesInterface } from &#x27;../interfaces/browser-specific-prefixes.interface&#x27;;
+import { LazyLoaderService } from &#x27;../services/lazy-loader.service&#x27;;
+
+//noinspection TsLint
+import { Observable, Subscription } from &#x27;rxjs&#x27;;
+import { NavigationItemInterface } from &#x27;../interfaces/navigation-item.interface&#x27;;
+
+declare const global: any;
+declare const window: any;
+
+/**
+ * Default settings for the slider.
+ *
+ * duration: time in millis. Duration for the transformation.
+ * autoPlay: activates the autoplay function.
+ * autoPlayDirection: PREV or NEXT.
+ * autoPlayInterval: interval for autoplay.
+ * rewind: activates the rewind function.
+ * rewindDuration: duration for the rewind slideback.
+ * loop: activate the infinite loop.
+ * navigation: activates the dot navigation.
+ * autoSwitchOff: disables the slider if all items are visible.
+ * swipe: activates the gesture control.
+ * lazyLoading: activates image lazy loading.
+ * autoHeight: activates auto high.
+ * easeFunction: TimingFunction
+ * classContainer: container div
+ * classFrame: frame div
+ * classList: item unsorted list
+ * classPrevButton: prev button
+ * classNextButton: bext button
+ * classDeactivatedButton: disabled button
+ * classActiveItem: active item
+ * classNavigationFrame: navigation div
+ * classNavigationItem: navigation unsorted list
+ * classActiveNavigationItem: dots
+ *
+ */
+const DEFAULT_SLIDER_OPTIONS: SliderOptionInterface &#x3D; {
+  duration: 300,
+
+  autoPlay: false,
+  autoPlayDirection: &#x27;NEXT&#x27;,
+  autoPlayInterval: 2000,
+
+  rewind: false,
+  rewindDuration: 300,
+
+  loop: false,
+
+  navigation: false,
+
+  autoSwitchOff: false,
+
+  swipe: false,
+
+  lazyLoading: false,
+
+  autoHeight: false,
+
+  easeFunction: &#x27;ease&#x27;,
+
+  classContainer: &#x27;&#x27;,
+  classFrame: &#x27;&#x27;,
+  classList: &#x27;&#x27;,
+  classPrevButton: &#x27;&#x27;,
+  classNextButton: &#x27;&#x27;,
+  classDeactivatedButton: &#x27;ngx-agile-slider-deactivated-button&#x27;,
+  classActiveItem: &#x27;ngx-agile-slider-active&#x27;,
+  classNavigationFrame: &#x27;&#x27;,
+  classNavigationItem: &#x27;&#x27;,
+  classActiveNavigationItem: &#x27;&#x27;
+};
+
+const SLIDE_DIRECTION_NEXT &#x3D; &#x27;NEXT&#x27;;
+const SLIDE_DIRECTION_PREV &#x3D; &#x27;PREV&#x27;;
+const TOUCH_EVENT &#x3D; { SWIPE_LEFT: &#x27;swipeleft&#x27;, SWIPE_RIGHT: &#x27;swiperight&#x27; };
+const LAZY_LOADING_CLASSES: {[s: string]: string} &#x3D; {
+  loading: &#x27;ngxAgileSliderLoading&#x27;,
+  loaded: &#x27;ngxAgileSliderLoaded&#x27;,
+  error: &#x27;ngxAgileSliderError&#x27;
+};
+
+/**
+ * This component represents a carousel container which contains the main functionality.
+ */
+@Component({
+  selector: &#x27;ngx-agile-slider-container&#x27;,
+  styleUrls: [&#x27;ngx-agile-slider-container.component.css&#x27;],
+  templateUrl: &#x27;ngx-agile-slider-container.component.html&#x27;,
+  encapsulation: ViewEncapsulation.None
+})
+export class SliderContainerComponent implements AfterViewInit, OnDestroy {
+  /* inputs */
+
+  /**
+   * additional slider options.
+   */
+  @Input() sliderOptions: SliderOptionInterface;
+  /**
+   * additional container id.
+   */
+  @Input() containerId &#x3D; &#x27;container&#x27;;
+
+  /* outputs */
+  @Output() beforeInit: EventEmitter&lt;void&gt; &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() afterInit: EventEmitter&lt;void&gt; &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() beforeSlide: EventEmitter&lt;void&gt; &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() afterSlide: EventEmitter&lt;void&gt; &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() next: EventEmitter&lt;void&gt; &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() prev: EventEmitter&lt;void&gt; &#x3D; new EventEmitter&lt;void&gt;();
+
+  /* view children */
+  /**
+   * div container ref
+   */
+  @ViewChild(&#x27;sliderContainer&#x27;) container: ElementRef;
+  /**
+   * div frame ref
+   */
+  @ViewChild(&#x27;sliderFrame&#x27;) frame: ElementRef;
+  /**
+   * div unsorted list ref
+   */
+  @ViewChild(&#x27;sliderList&#x27;) sliderList: ElementRef;
+
+  /* class variables */
+  public navigation &#x3D; false;
+  public navigationItems: NavigationItemInterface[];
+  public sliderActive &#x3D; true;
+  public deactivateNext: string;
+  public deactivatePrev: string;
+  public touchCursor &#x3D; false;
+  public currentIndex &#x3D; 0;
+
+  private _sliderElements: any[] &#x3D; [];
+  private _sliderImageSources: string[][] &#x3D; [];
+  private _concatenatedSliderOptions: SliderOptionInterface;
+  private _browserPrefixes: BrowserSpecificPrefixesInterface;
+  private _itemsWidth: number;
+  private _sliderFrameWidth: number;
+  private _resizeSubscription: Subscription;
+  private _afterSlideSubscription: Subscription;
+  private _lockIndex &#x3D; false;
+
+  constructor(private _lazyLoaderService: LazyLoaderService, private _renderer: Renderer, private detectChangeRef: ChangeDetectorRef) {}
+
+  /**
+   * Called after the view is initialized. Triggers the slider initializing.
+   */
+  public ngAfterViewInit() {
+    this._browserPrefixes &#x3D; this.getBrowserSpecificPrefixes();
+    this._sliderElements &#x3D; this.sliderList.nativeElement.children;
+    this.initSlider();
+  }
+
+  public ngOnDestroy() {
+    this._resizeSubscription.unsubscribe();
+    this._afterSlideSubscription.unsubscribe();
+  }
+
+
+  /**
+   * Called after click on the NEXT navigation arrow.
+   * Emits an next click event and calls the slide function.
+   */
+  public onClickNext() {
+    this.next.emit();
+    this.slideItem(SLIDE_DIRECTION_NEXT);
+  }
+
+  /**
+   * Called after click on the PREV navigation arrow.
+   * Emits an prev click event and calls the slide function.
+   */
+  public onClickPrev() {
+    this.prev.emit();
+    this.slideItem(SLIDE_DIRECTION_PREV);
+  }
+
+  /**
+   * Called after a swipe over the slider container.
+   * Triggers the slide function.
+   * @param action swipeleft or swiperight
+   */
+  public onSwipe(action &#x3D; TOUCH_EVENT.SWIPE_RIGHT) {
+    if (this._concatenatedSliderOptions.swipe) {
+      if (action &#x3D;&#x3D;&#x3D; TOUCH_EVENT.SWIPE_RIGHT) {
+        this.prev.emit();
+        this.slideItem(SLIDE_DIRECTION_PREV);
+      } else if (action &#x3D;&#x3D;&#x3D; TOUCH_EVENT.SWIPE_LEFT) {
+        this.next.emit();
+        this.slideItem(SLIDE_DIRECTION_NEXT);
+      }
+    }
+  }
+
+  /**
+   * Called after a click on the navigation dot.
+   * Triggers the slide function.
+   * @param index index of the clicked dot
+   */
+  public onClickNavigationItem(index: number) {
+    this.currentIndex &#x3D; this._concatenatedSliderOptions.loop ? index + 1 : index;
+    this.slideItemToCurrentIndex();
+    this.setNavigationItemToActive(index);
+  }
+
+  /**
+   * Highlights the current visible element in the navigation.
+   */
+  public setNavigationItemToActive(index: number) {
+    _.forEach(this.navigationItems, (item: NavigationItemInterface, itemIndex: number) &#x3D;&gt; {
+      if (itemIndex &#x3D;&#x3D;&#x3D; index) {
+        item.active &#x3D; true;
+      } else if (item.active) {
+        item.active &#x3D; false;
+      }
+    });
+  }
+
+  /**
+   * Initializes the carousel and fires the events.
+   */
+  public initSlider() {
+    this.beforeInit.emit();
+
+    this._concatenatedSliderOptions &#x3D; Object.assign({}, DEFAULT_SLIDER_OPTIONS, this.sliderOptions);
+
+    /* Infinite loop setup */
+    if (this._concatenatedSliderOptions.loop) {
+      this.prepareForInfinityLoop();
+      this.currentIndex++;
+    } else {
+      this.togglePrevButtonClass(this._concatenatedSliderOptions.swipe);
+    }
+
+    /* Lazy loading setup */
+    if (this._concatenatedSliderOptions.lazyLoading) {
+      this.prepareForLazyLoading();
+    }
+
+    this.buildContainer();
+    this.setItemToActive();
+
+    /* AutoPlay setup */
+    if (this._concatenatedSliderOptions.autoPlay) {
+      this.prepareForAutoPlay();
+    }
+
+    /* Navigation setup */
+    if (this._concatenatedSliderOptions.navigation) {
+      this.prepareForNavigation();
+    }
+
+    /* Auto switch off setup */
+    if (this._concatenatedSliderOptions.autoSwitchOff) {
+      this.prepareAutoSwitchOff();
+    }
+
+    /* swipe setup */
+    if (this._concatenatedSliderOptions.swipe) {
+      this.touchCursor &#x3D; true;
+    }
+
+
+    this._afterSlideSubscription &#x3D; this.afterSlide.subscribe(() &#x3D;&gt; {
+      /* called after a slide. Sets the navigation to the current index. */
+      if (this._concatenatedSliderOptions.navigation) {
+        this.setNavigationItemToActive(this._concatenatedSliderOptions.loop ? this.currentIndex - 1 : this.currentIndex);
+      }
+
+      if (!this._concatenatedSliderOptions.loop &amp;&amp; !this._concatenatedSliderOptions.rewind) {
+        if (this.currentIndex &#x3D;&#x3D;&#x3D; 0) {
+          this.togglePrevButtonClass(true);
+        } else if (this.currentIndex &#x3D;&#x3D;&#x3D; this._sliderElements.length - 1) {
+          this.toggleNextButtonClass(true);
+        } else {
+          this.togglePrevButtonClass(false);
+          this.toggleNextButtonClass(this._lockIndex);
+        }
+      }
+    });
+
+    this.detectChangeRef.detectChanges();
+
+    this.afterInit.emit();
+  }
+
+  /**
+   * Calls the slide function and sets the current element to active.
+   */
+  public slideItemToCurrentIndex() {
+    this.beforeSlide.emit();
+
+    this.translate();
+    this.setItemToActive();
+
+    this.afterSlide.emit();
+  }
+
+  /**
+   * Slides the elements.
+   * @param direction Slide duration
+   */
+  public slideItem(direction: string) {
+    let tempCurrentIndex: number;
+
+    if (SLIDE_DIRECTION_NEXT &#x3D;&#x3D;&#x3D; direction &amp;&amp; !this._lockIndex) {
+      tempCurrentIndex &#x3D; this.currentIndex + 1;
+    } else if (SLIDE_DIRECTION_PREV &#x3D;&#x3D;&#x3D; direction) {
+      tempCurrentIndex &#x3D; this.currentIndex - 1;
+    }
+
+    if (tempCurrentIndex &gt;&#x3D; 0 &amp;&amp; tempCurrentIndex &lt;&#x3D; this._sliderElements.length - 1) {
+      this.currentIndex &#x3D; tempCurrentIndex;
+    } else if (this._concatenatedSliderOptions.rewind) {
+      this.currentIndex &#x3D; 0;
+      this.translate(this._concatenatedSliderOptions.rewindDuration);
+      this.setItemToActive();
+      this.afterSlide.emit();
+    }
+
+    this.beforeSlide.emit();
+
+    if (this._concatenatedSliderOptions.loop
+      &amp;&amp; (this.currentIndex &gt;&#x3D; this._sliderElements.length - 1 || this.currentIndex &lt;&#x3D; 0)) {
+
+      this.sliderList.nativeElement
+        .addEventListener(this._browserPrefixes.transitionEndPrefix, () &#x3D;&gt; {
+          this.sliderList.nativeElement.removeEventListener(this._browserPrefixes.transitionEndPrefix);
+          this.currentIndex &#x3D; (direction &#x3D;&#x3D;&#x3D; SLIDE_DIRECTION_NEXT) ? 1 : this._sliderElements.length - 2;
+          this.translate(0);
+          this.setItemToActive();
+          this.afterSlide.emit();
+        });
+    }
+
+    this.translate();
+    this.setItemToActive();
+
+    this.afterSlide.emit();
+  }
+
+  /**
+   * Determines the container and frame sizes
+   */
+  public buildContainer() {
+    this._itemsWidth &#x3D; this.sliderList.nativeElement.getBoundingClientRect().width || this.sliderList.nativeElement.offsetWidth;
+    this._sliderFrameWidth &#x3D; this.frame.nativeElement.getBoundingClientRect().width || this.frame.nativeElement.offsetWidth;
+
+    /* If the size is equal, calculate the offset width of the elements */
+    if (this._itemsWidth &#x3D;&#x3D;&#x3D; this._sliderFrameWidth) {
+
+      this._itemsWidth &#x3D; _.reduce(this._sliderElements, (prevValue, item: any) &#x3D;&gt; {
+        return prevValue + item.getBoundingClientRect().width || item.offsetWidth;
+      }, 0);
+
+    }
+
+    if (this._concatenatedSliderOptions.autoSwitchOff) {
+      this.sliderActive &#x3D; !(this._itemsWidth &lt;&#x3D; this._sliderFrameWidth);
+      this.detectChangeRef.detectChanges();
+    }
+
+    this.translate(0);
+  }
+
+  /**
+   * Prepares the loop
+   */
+  public prepareForInfinityLoop() {
+    // append the first slide element
+    this.sliderList.nativeElement
+      .appendChild(this._sliderElements[0].cloneNode(true));
+
+    // append the last slide element
+    this.sliderList.nativeElement
+      .insertBefore(
+        this._sliderElements[this._sliderElements.length - 1].cloneNode(true),
+        this.sliderList.nativeElement.firstChild
+      );
+
+    this._sliderElements &#x3D; this.sliderList.nativeElement.children;
+  }
+
+  /**
+   * Prepares the auto switch off
+   */
+  public prepareAutoSwitchOff() {
+    this._resizeSubscription &#x3D; Observable.fromEvent(window, &#x27;resize&#x27;).debounceTime(250)
+      .subscribe(() &#x3D;&gt; {
+        this.buildContainer();
+      });
+  }
+
+  /**
+   * Prepares the auto play
+   */
+  public prepareForAutoPlay() {
+    window.setInterval(() &#x3D;&gt; {
+      if (this._concatenatedSliderOptions.autoPlayDirection &#x3D;&#x3D;&#x3D; SLIDE_DIRECTION_NEXT) {
+        this.next.emit();
+        this.slideItem(SLIDE_DIRECTION_NEXT);
+      } else {
+        this.prev.emit();
+        this.slideItem(SLIDE_DIRECTION_PREV);
+      }
+    }, this._concatenatedSliderOptions.autoPlayInterval);
+  }
+
+  /**
+   * Prepares the navigation
+   */
+  public prepareForNavigation() {
+    this.navigation &#x3D; true;
+    this.navigationItems &#x3D; [];
+    _.forEach(this._sliderElements, (item: any, index: number) &#x3D;&gt; {
+
+      if ((this._concatenatedSliderOptions.loop &amp;&amp; (index &gt; 0 &amp;&amp; index &lt; this._sliderElements.length - 1))
+        || !this._concatenatedSliderOptions.loop) {
+
+        this.navigationItems.push({item: item, active: index &#x3D;&#x3D;&#x3D; this.currentIndex});
+      }
+
+    });
+
+    this.detectChangeRef.detectChanges();
+  }
+
+  /**
+   * Transforms the elements
+   * @param offset Value to transform
+   * @param duration Duration of the transformation
+   */
+  public translate(duration: number &#x3D; this._concatenatedSliderOptions.duration, offset?: number) {
+    let translateValue: number &#x3D; (offset) ? offset : this._sliderElements[this.currentIndex].offsetLeft * -1;
+    const durationValue: number &#x3D; (duration !&#x3D;&#x3D; undefined) ? duration : this._concatenatedSliderOptions.duration;
+    const maxOffset &#x3D; Math.round(this._itemsWidth - this._sliderFrameWidth);
+
+    if (!this._concatenatedSliderOptions.loop) {
+      translateValue &#x3D; Math.min(translateValue * -1, maxOffset) * -1;
+
+      this._lockIndex &#x3D; translateValue &#x3D;&#x3D;&#x3D; maxOffset * -1;
+    }
+
+    this.resize();
+
+    this.sliderList
+      .nativeElement
+      .style[this._browserPrefixes.transitionPrefix + &#x27;TimingFunction&#x27;] &#x3D; this._concatenatedSliderOptions.easeFunction;
+
+    this.sliderList
+      .nativeElement
+      .style[this._browserPrefixes.transitionPrefix + &#x27;Duration&#x27;] &#x3D; durationValue + &#x27;ms&#x27;;
+
+    if (this._browserPrefixes.translate3dAvailable) {
+      this.sliderList
+        .nativeElement
+        .style[this._browserPrefixes.transformPrefix] &#x3D; &#x27;translate3d(&#x27; + translateValue + &#x27;px, 0, 0)&#x27;;
+    } else {
+      this.sliderList
+        .nativeElement
+        .style[this._browserPrefixes.transformPrefix] &#x3D; &#x27;translate(&#x27; + translateValue + &#x27;px, 0, 0)&#x27;;
+    }
+
+    /* load the image if lazyloading active */
+    if (this._concatenatedSliderOptions.lazyLoading) {
+      this.loadImage();
+    }
+  }
+
+
+
+  /**
+   * Prepares for image lazy loading.
+   * Search for all images in the elements.
+   */
+  public prepareForLazyLoading(node?: any, nodeIndex?: number) {
+    if (node) {
+      _.forEach(node.children, (child: any) &#x3D;&gt; {
+        if (child.nodeName &#x3D;&#x3D;&#x3D; &#x27;IMG&#x27;) {
+          this._sliderImageSources[nodeIndex].push(child.src);
+          child.src &#x3D; &#x27;&#x27;;
+          this.prepareForLazyLoading(child, nodeIndex);
+        } else {
+          this.prepareForLazyLoading(child, nodeIndex);
+        }
+      });
+    } else {
+      _.forEach(this._sliderElements, (item: any, index: number) &#x3D;&gt; {
+        this._sliderImageSources[index] &#x3D; [];
+
+        _.forEach(item.children, (child: any) &#x3D;&gt; {
+          if (child.nodeName &#x3D;&#x3D;&#x3D; &#x27;IMG&#x27;) {
+            this._sliderImageSources[index].push(child.src);
+            child.src &#x3D; &#x27;&#x27;;
+            this.prepareForLazyLoading(child, index);
+          } else {
+            this.prepareForLazyLoading(child, index);
+          }
+        });
+      });
+    }
+  }
+
+  /**
+   * Loads the images of current element.
+   */
+  public loadImage() {
+    if (!this._sliderElements[this.currentIndex].classList.contains(LAZY_LOADING_CLASSES[&#x27;loading&#x27;])
+        &amp;&amp; !this._sliderElements[this.currentIndex].classList.contains(LAZY_LOADING_CLASSES[&#x27;loaded&#x27;])) {
+
+      this.setElementToLoading();
+      _.forEach(this._sliderImageSources[this.currentIndex], (src: string, index: number) &#x3D;&gt; {
+        this._lazyLoaderService.load(src)
+          .then(() &#x3D;&gt; {
+            this.setLoadedImage(src, index, this._sliderElements[this.currentIndex]);
+            this.setElementToLoaded();
+          }, () &#x3D;&gt; {
+            this.setElementToError();
+          });
+      });
+    }
+  }
+
+  /**
+   * Sets the loaded image to the img tag.
+   */
+  public setLoadedImage(src: string, index: number, node: any, nodeIndex &#x3D; 0) {
+    _.forEach(node.children, (child: any) &#x3D;&gt; {
+      if (child.nodeName &#x3D;&#x3D;&#x3D; &#x27;IMG&#x27; &amp;&amp; index &#x3D;&#x3D;&#x3D; nodeIndex) {
+        this._renderer.setElementAttribute(child, &#x27;src&#x27;, src);
+      } else {
+        this.setLoadedImage(src, index, child, nodeIndex);
+      }
+    });
+
+  }
+
+
+  /**
+   * Makes the item under the current index from the list active.
+   */
+  public setItemToActive() {
+    const activeClass &#x3D; this._concatenatedSliderOptions.classActiveItem;
+    _.forEach(this._sliderElements, (item: any) &#x3D;&gt; {
+      if (item.children[0].classList.contains(activeClass)) {
+        item.children[0].classList.remove(activeClass);
+      }
+    });
+
+    this._sliderElements[this.currentIndex].children[0].classList.add(activeClass);
+  }
+
+  /**
+   * Marks the element with the loading class
+   */
+  public setElementToLoading() {
+    this._sliderElements[this.currentIndex].classList.add(LAZY_LOADING_CLASSES[&#x27;loading&#x27;]);
+  }
+
+  /**
+   * Marks the element with the loaded class
+   */
+  public setElementToLoaded() {
+    _.forEach(this._sliderElements, (item: any) &#x3D;&gt; {
+      if (item.classList.contains(LAZY_LOADING_CLASSES[&#x27;loading&#x27;])) {
+        item.classList.remove(LAZY_LOADING_CLASSES[&#x27;loading&#x27;]);
+      }
+    });
+    this._sliderElements[this.currentIndex].classList.add(LAZY_LOADING_CLASSES[&#x27;loaded&#x27;]);
+  }
+
+  /**
+   * Marks the element with the error class
+   */
+  public setElementToError() {
+    _.forEach(this._sliderElements, (item: any) &#x3D;&gt; {
+      if (item.classList.contains(LAZY_LOADING_CLASSES[&#x27;loading&#x27;])) {
+        item.classList.remove(LAZY_LOADING_CLASSES[&#x27;loading&#x27;]);
+      }
+    });
+    this._sliderElements[this.currentIndex].classList.add(LAZY_LOADING_CLASSES[&#x27;error&#x27;]);
+  }
+
+  /**
+   * Marks the PREV button with a class if deactivated.
+   * @param deactivate true for deactivated false if not
+   */
+  public togglePrevButtonClass(deactivate: boolean) {
+    this.deactivatePrev &#x3D; deactivate ? this._concatenatedSliderOptions.classDeactivatedButton : &#x27;&#x27;;
+  }
+
+  /**
+   * Marks the NEXT button with a class if deactivated.
+   * @param deactivate true for deactivated false if not
+   */
+  public toggleNextButtonClass(deactivate: boolean) {
+    this.deactivateNext &#x3D; deactivate ? this._concatenatedSliderOptions.classDeactivatedButton : &#x27;&#x27;;
+  }
+
+  /**
+   * Sets the frame height to element height.
+   */
+  public resize() {
+    this.frame.nativeElement.style[&#x27;height&#x27;] &#x3D; this._sliderElements[this.currentIndex].children[0].clientHeight + &#x27;px&#x27;;
+  }
+
+  /**
+   * Return browser specific prefixes.
+   * @returns {BrowserSpecificPrefixesInterface}
+   */
+  public getBrowserSpecificPrefixes(): BrowserSpecificPrefixesInterface {
+    let transformPrefix: string;
+    let transitionPrefix: string;
+    let transitionEndPrefix: string;
+    let translate3dAvailable: boolean;
+
+    const availableStyle: any &#x3D; this.container.nativeElement.style;
+
+    if (availableStyle[&#x27;webkitTransition&#x27;] &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      transitionEndPrefix &#x3D; &#x27;webkitTransitionEnd&#x27;;
+      transitionPrefix &#x3D; &#x27;webkitTransition&#x27;;
+    }
+
+    if (availableStyle[&#x27;transition&#x27;] &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      transitionEndPrefix &#x3D; &#x27;transitionend&#x27;;
+      transitionPrefix &#x3D; &#x27;transition&#x27;;
+    }
+
+    if (availableStyle[&#x27;webkitTransform&#x27;] &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      transformPrefix &#x3D; &#x27;webkitTransform&#x27;;
+    }
+
+    if (availableStyle[&#x27;msTransform&#x27;] &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      transformPrefix &#x3D; &#x27;msTransform&#x27;;
+    }
+
+    if (availableStyle[&#x27;transform&#x27;] &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      transformPrefix &#x3D; &#x27;transform&#x27;;
+    }
+
+
+    availableStyle[transformPrefix] &#x3D; &#x27;translate3d(0, 0, 0)&#x27;;
+    translate3dAvailable &#x3D; !!global.getComputedStyle(this.container.nativeElement).getPropertyValue(transformPrefix);
+
+    return { transformPrefix, transitionPrefix, transitionEndPrefix, translate3dAvailable };
+  }
+}
+</code></pre>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/highlight.pack.js"></script>
+       <script src="../js/libs/highlightjs-line-numbers.min.js"></script>
+       <script src="../js/search/search_index.js"></script>
+       <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad();
+            });
+       </script>
+
+    </body>
+</html>

@@ -93,6 +93,7 @@ const LAZY_LOADING_CLASSES: {[s: string]: string} = {
  * This component represents a carousel container which contains the main functionality.
  */
 @Component({
+  moduleId: module.id,
   selector: 'ngx-agile-slider-container',
   styleUrls: ['ngx-agile-slider-container.component.css'],
   templateUrl: 'ngx-agile-slider-container.component.html',

@@ -4,6 +4,7 @@ import { AfterViewInit, Component, ElementRef, Input, ViewChild, ViewEncapsulati
  * This component represents the slide item.
  */
 @Component({
+  moduleId: module.id,
   selector: 'ngx-agile-slider-item',
   template: `
     <li #sliderItem class="ngx-agile-slider-item">
