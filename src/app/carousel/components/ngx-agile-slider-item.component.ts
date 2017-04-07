@@ -18,6 +18,7 @@ export class SliderItemComponent implements AfterViewInit {
    * additional classes for li
    */
   @Input() additionalClasses: string[];
+  @Input() width: string;
 
   @ViewChild('sliderItem') sliderItem: ElementRef;
 
@@ -29,6 +30,10 @@ export class SliderItemComponent implements AfterViewInit {
       for (let i = 0; i < this.additionalClasses.length; i++) {
         this.sliderItem.nativeElement.classList.add(this.additionalClasses[i]);
       }
+    }
+
+    if (this.width) {
+      this.sliderItem.nativeElement.style.width = this.width;
     }
   }
 }
