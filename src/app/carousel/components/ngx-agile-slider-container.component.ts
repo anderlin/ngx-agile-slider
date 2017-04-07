@@ -229,12 +229,31 @@ export class SliderContainerComponent implements AfterViewInit, OnDestroy {
   }
 
   /**
+   *
+   */
+  public setClasses() {
+    if (this._concatenatedSliderOptions.classContainer) {
+      this.container.nativeElement.classList.add(this.sliderOptions.classContainer);
+    }
+
+    if (this._concatenatedSliderOptions.classFrame) {
+      this.frame.nativeElement.classList.add(this.sliderOptions.classFrame);
+    }
+
+    if (this._concatenatedSliderOptions.classList) {
+      this.sliderList.nativeElement.classList.add(this.sliderOptions.classList);
+    }
+  }
+
+  /**
    * Initializes the carousel and fires the events.
    */
   public initSlider() {
     this.beforeInit.emit();
 
     this._concatenatedSliderOptions = Object.assign({}, DEFAULT_SLIDER_OPTIONS, this.sliderOptions);
+
+    this.setClasses();
 
     /* Infinite loop setup */
     if (this._concatenatedSliderOptions.loop) {

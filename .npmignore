@@ -1,10 +1,16 @@
-# Node generated files
-node_modules
-
-# OS generated files
-Thumbs.db
-.DS_Store
-
-# Ignored files
+#################
+## Misc
+#################
+node_modules/*
+npm-debug.log
 *.ts
 !*.d.ts
+.github
+coverage
+
+#################
+## JetBrains
+#################
+.idea
+.project
+.settings

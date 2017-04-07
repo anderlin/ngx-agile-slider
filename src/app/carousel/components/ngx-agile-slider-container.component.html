@@ -1,36 +1,38 @@
 <div #sliderContainer
-     class="slider simple"
+     class="ngx-agile-slider-container"
      [attr.id]="containerId"
      (swipeleft)="onSwipe($event.type)"
      (swiperight)="onSwipe($event.type)">
 
-  <div #sliderFrame class="frame" [ngClass]="{'ngx-agile-slider-touch-frame': touchCursor}">
-    <ul #sliderList class="slides">
+  <div #sliderFrame class="ngx-agile-slider-frame" [ngClass]="{'ngx-agile-slider-touch-frame': touchCursor}">
+    <ul #sliderList class="ngx-agile-slider-slides">
       <ng-content></ng-content>
     </ul>
   </div>
 
-  <span class="prev" (click)="onClickPrev()" *ngIf="sliderActive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5">
-            <g>
-              <path [ngClass]="deactivatePrev"
-                    d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/>
-            </g>
-          </svg>
-      </span>
+  <span class="ngx-agile-slider-prev" (click)="onClickPrev()" *ngIf="sliderActive">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5">
+      <g>
+        <path [ngClass]="deactivatePrev"
+              d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/>
+      </g>
+    </svg>
+  </span>
 
-  <span class="next" (click)="onClickNext()" *ngIf="sliderActive">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5">
-          <g>
-            <path [ngClass]="deactivateNext"
-                  d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/>
-          </g>
-        </svg>
-      </span>
+  <span class="ngx-agile-slider-next" (click)="onClickNext()" *ngIf="sliderActive">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5">
+      <g>
+        <path [ngClass]="deactivateNext"
+              d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/>
+      </g>
+    </svg>
+  </span>
 
-  <ul class="dots" *ngIf="navigation">
+  <ul class="ngx-agile-slider-dots" *ngIf="navigation">
     <li class="ngx-agile-slider-nav-dots"
         [class.active]="item.active"
-        *ngFor="let item of navigationItems; let idx = index" (click)="onClickNavigationItem(idx)"></li>
+        *ngFor="let item of navigationItems; let idx = index"
+        (click)="onClickNavigationItem(idx)"
+    ></li>
   </ul>
 </div>

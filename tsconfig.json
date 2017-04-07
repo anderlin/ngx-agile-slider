@@ -6,15 +6,28 @@
     "lib": ["ES6", "DOM", "ES2015.Promise"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
     "declaration": true,
-    "removeComments": true
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "rootDir": ".",
+    "outDir": "dist",
+    "types": [ "node" ]
   },
+  "compileOnSave": false,
+  "include": [
+    "./index.ts",
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
   "files": [
-    "ngx-agile-slider.ts"
+    "index.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/**/*.ts",
+    "src/**/*spec.ts"
   ],
   "typeRoots": [
     "./node_modules/@types"

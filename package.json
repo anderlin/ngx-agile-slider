@@ -1,6 +1,8 @@
 {
   "name": "ngx-agile-slider",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.2",
+  "description": "Carousel module for Angular > version 2",
+  "main": "index.js",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -13,8 +15,29 @@
     "webdriver-start": "node_modules/protractor/bin/webdriver-manager start",
     "webdriver-update": "node_modules/protractor/bin/webdriver-manager update",
     "serve.coverage": "istanbul -b src/ -i coverage/coverage-final.json -o coverage -t html",
-    "prepublish": "tsc"
+    "build": "copyfiles -u 1 dist/package.json .backup && rimraf dist && tsc && ngc src && copyfiles src/app/carousel/**/*.css.ngstyle.ts dist && copyfiles src/app/carousel/**/*.css dist && copyfiles src/app/carousel/**/*.ngfactory.ts dist && copyfiles src/app/carousel/**/*.html dist && copyfiles LICENSE README.md dist && copyfiles -u 1 .backup/package.json dist && rimraf .backup"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderlin/ngx-agile-slider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anderlin/ngx-agile-slider/issues"
+  },
+  "homepage": "https://github.com/anderlin/ngx-agile-slider#readme",
+  "peerDependencies": {
+    "@angular/core": ">=2.0.0",
+    "@angular/http": ">=2.0.0",
+    "hammerjs": ">=2.0.8",
+    "typescript": ">=2.1.5",
+    "rxjs": ">=5.0.0"
+  },
+  "keywords": [
+    "carousel",
+    "slider",
+    "angular",
+    "angular2"
+  ],
   "author": "Aleksej Kolb",
   "contributors": [
     {
@@ -48,6 +71,7 @@
     "angular-cli": "1.0.0-beta.28.3",
     "codelyzer": "~2.0.0-beta.1",
     "compodoc": "0.0.41",
+    "copyfiles": "^1.2.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
@@ -59,6 +83,7 @@
     "karma-remap-istanbul": "^0.2.1",
     "mocha": "^3.2.0",
     "protractor": "~4.0.13",
+    "rimraf": "^2.6.1",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
     "typescript": "~2.1.5"

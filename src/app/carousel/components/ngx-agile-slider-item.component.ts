@@ -7,7 +7,7 @@ import { AfterViewInit, Component, ElementRef, Input, ViewChild, ViewEncapsulati
   moduleId: module.id,
   selector: 'ngx-agile-slider-item',
   template: `
-    <li #sliderItem class="ngx-agile-slider-item">
+    <li #sliderItem class="ngx-agile-slider-item variablewidth">
       <ng-content></ng-content>
     </li>
   `,
@@ -22,7 +22,7 @@ export class SliderItemComponent implements AfterViewInit {
   @ViewChild('sliderItem') sliderItem: ElementRef;
 
   /**
-   * Called after the view was initialized. Adds the additionals classes
+   * Called after the view was initialized. Adds the additional classes
    */
   public ngAfterViewInit() {
     if (this.additionalClasses) {
