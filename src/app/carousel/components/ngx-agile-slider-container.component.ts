@@ -111,6 +111,8 @@ export class SliderContainerComponent implements AfterViewInit, OnDestroy {
    */
   @Input() containerId = 'container';
 
+  @Input() initializationTrigger: EventEmitter<boolean> = new EventEmitter<boolean>(true);
+
   /* outputs */
   @Output() beforeInit: EventEmitter<void> = new EventEmitter<void>();
   @Output() afterInit: EventEmitter<void> = new EventEmitter<void>();
@@ -160,7 +162,12 @@ export class SliderContainerComponent implements AfterViewInit, OnDestroy {
   public ngAfterViewInit() {
     this._browserPrefixes = this.getBrowserSpecificPrefixes();
     this._sliderElements = this.sliderList.nativeElement.children;
-    this.initSlider();
+    this.initializationTrigger
+      .subscribe((value: boolean) => {
+        if (value) {
+          this.initSlider();
+        }
+      });
   }
 
   public ngOnDestroy() {
@@ -462,7 +469,12 @@ export class SliderContainerComponent implements AfterViewInit, OnDestroy {
    * @param duration Duration of the transformation
    */
   public translate(duration: number = this._concatenatedSliderOptions.duration, offset?: number) {
-    let translateValue: number = (offset) ? offset : this._sliderElements[this.currentIndex].offsetLeft * -1;
+    let translateValue: number = (offset)
+                                  ? offset
+                                  : (this._sliderElements[this.currentIndex].offsetLeft)
+                                    ? this._sliderElements[this.currentIndex].offsetLeft * -1
+                                    : 0;
+
     const durationValue: number = (duration !== undefined) ? duration : this._concatenatedSliderOptions.duration;
     const maxOffset = Math.round(this._itemsWidth - this._sliderFrameWidth);
 

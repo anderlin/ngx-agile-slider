@@ -1,6 +1,6 @@
 {
   "name": "ngx-agile-slider",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.7",
   "description": "Carousel module for Angular > version 2",
   "main": "index.js",
   "license": "MIT",
